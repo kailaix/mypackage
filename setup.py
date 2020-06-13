@@ -15,7 +15,7 @@ if platform.startswith('win32'):
     cmake -A x64 .. &&\
     cmake --build . --config Release""")
 else:
-    subprocess.Popen(
+    os.system(
         """cd mypackage/src/build &&\
         cmake .. &&\
         make -j
