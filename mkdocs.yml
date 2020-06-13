@@ -1,0 +1,19 @@
+site_name: MyPackage
+site_description: A Simple Template for Python Packages with C/C++ Extensions
+site_author: Kailai Xu
+
+repo_url: https://github.com/kailaix/mypackage
+edit_uri: "https://github.com/kailaix/mypackage"
+
+theme:
+    name: mkdocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+
+nav:
+    - Home: index.md
+
+plugins:
+  - search

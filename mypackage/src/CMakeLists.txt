@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(MYPACKAGE)
+set(CMAKE_BUILD_TYPE Release)
+
+if(MSVC)
+set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG")
+else()
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
+endif()
+set (CMAKE_CXX_STANDARD 11)
+add_library(sum SHARED sum.cpp)
+
+set_target_properties(sum PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build  RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR}/build)
