@@ -26,8 +26,9 @@ else:
 setup(
     name = "mypackage",
     version = "0.1.0",
-    scripts = ['bin/cr', 'bin/cr.bat'],
-    description = "An example pacakge.",
+    scripts = ['bin/cr', 'bin/cr.bat'], # the executables will be placed in the Python `bin` directory
+    description = "An example pacakge.", 
+    install_requires = ["numpy"],
     author = "Kailai Xu",
     author_email = "kailaix@hotmail.com"
 )

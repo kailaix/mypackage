@@ -1,5 +1,6 @@
 #include "common.h"
 
+// If you are writing in C++, you need to use extern "C" so that the compiler does not mangle the namespace. 
 extern "C" EXPORT void inplace_accumulate(double *arr, int n);
 extern "C" EXPORT double sum(const double *arr, int n);
 

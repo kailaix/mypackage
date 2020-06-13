@@ -8,7 +8,7 @@ class TestMySum(unittest.TestCase):
     def test(self):
         a = np.random.rand(20)
         s = a.sum()
-        self.assertEqual(mysum(a), s)
+        self.assertLessEqual(abs(mysum(a)-s), 1e-8)
 
 
 class TestAccSum(unittest.TestCase):
