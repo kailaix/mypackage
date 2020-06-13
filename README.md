@@ -51,3 +51,19 @@ To make documents, run
 
 
 
+## Using `mypackage`
+
+
+`mypackage` provides a binary executable `cr`, and you can execute this executable via 
+
+```bash
+cr
+```
+
+If you want to use `mypackage` in Python, you can import the package, e.g.,
+
+```python
+import mypackage
+from mypackage import *
+import mypackage.core as core 
+```
