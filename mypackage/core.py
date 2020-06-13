@@ -8,9 +8,11 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Load dynamic libraries
 if platform.startswith("win"):
-    libpath = os.path.join(dir_path, "src", "build", "sum")
+    libpath = os.path.join(dir_path, "src", "build", "sum.dll")
+elif platform.startswith("linux")
+    libpath = os.path.join(dir_path, "src", "build", "libsum.so")
 else:
-    libpath = os.path.join(dir_path, "src", "build", "libsum")
+    libpath = os.path.join(dir_path, "src", "build", "libsum.dylib")    
 _lib = CDLL(libpath)
 
 # We pass numpy arrays as pointers to C++

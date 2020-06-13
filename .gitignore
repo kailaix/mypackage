@@ -3,3 +3,4 @@
 *build*
 mypackage.egg-info
 site
+.vscode
